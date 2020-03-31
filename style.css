@@ -1,0 +1,28 @@
+html, body {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.calendar {
+    margin-top: 150px;
+}
+
+li {
+    display: inline;
+    line-height: 6em;
+    padding: 20px;
+    border-style: inset;
+}
+
+.datebutton {
+    background-color: #add8e6;
+}
+
+.output {
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: serif;
+}
