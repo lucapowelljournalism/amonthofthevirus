@@ -15,7 +15,8 @@ $(".calendar").on("click", function (e) {
 		hashtag_clicked = e.target.id
 
 		document.getElementById("hashtagoutput").innerHTML = hashtag_clicked;
-		if (date_clicked === "feb15" & hashtag_clicked === "#quarantena") {
+
+		if (date_clicked === "feb15" & hashtag_clicked === "#cuarentena") {
 			$(".twitter-tweet").removeClass('inactive');
 		} else {
 			$(".twitter-tweet").addClass('inactive');
