@@ -23,3 +23,7 @@ $(".calendar").on("click", function (e) {
 		}
 	});
 });
+
+// loop through all the dates, return the date that matches the stored variable
+// loop through all the hashtags, return the hashtag which matches the stored variable
+// add an active class to the corresponding tweet
