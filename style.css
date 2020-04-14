@@ -104,6 +104,11 @@ strong {
 
     .container img {
         display: none;
+        width: 100%;
+        border: 5px dotted #bdceda;
+        border-radius: 20px;
+        \\*display: block;
+        padding-top: 60px;
     }
 
     h1 {
@@ -125,6 +130,12 @@ strong {
         text-align: left;
         line-height: 1em;
         margin-right: 10%;
+    .numero {
+        width: 80%;
+        display: inline;
+        vertical-align: middle;
+        height: 45px;
+        padding: 30px;
     }
 
     .container {
@@ -356,6 +367,10 @@ li {
     height: 20px;
     margin-left: 10px;
     margin-top: 5px;
+}
+
+.output p {
+    display: inline;
 }
 
 blockquote.twitter-tweet {
