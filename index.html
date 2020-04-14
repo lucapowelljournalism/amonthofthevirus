@@ -25,7 +25,7 @@
   <body>
     <!-- YOUR CONTENT GOES HERE -->
 
-    <h1>COVID-19 Title Goes Here, Yes Right Here</h1>
+    <h1>Twitter Interactive! Ooh, baby! That's the spot!</h1>
 
     <h4>By: Luca Powell and Leonardo March</h4>
 
@@ -33,22 +33,24 @@
 
       <img src="img/world.svg">
 
-      <div class="text">
-        Instructions. fasdf I'm baby pop-up farm-to-table truffaut, photo booth pitchfork PBR&B hashtag hexagon occupy hella prism cliche. Jianbing raclette brooklyn twee sartorial ramps truffaut. Kombucha farm-to-table wolf,
-        distillery kickstarter
-        chicharrones DIY <p> letterpress tote bag. Williamsburg air plant vinyl fanny pack, kombucha selvage cornhole. Craft beer tattooed artisan, hot chicken echo park bespoke forage trust fund microdosing actually poutine heirloom chambray tumeric
-          photo booth pitchfoanbing raclette brooklyn twee sartorial ramps truffaut. Kombucha farm-to-table wolf.
+      <div class=" text">
+        Task 1) Design a layout that is intuitive. Layout should encourage users to test multiple hashtags. Users should feel like their curiosity is rewarded. Moving throughout the interactive should be easy, not confusing, ideally.
+
+        Simply CSS and Media Queries (Leo workin on this)
+        <br><br>\##LEO== CSS MASTER##
+        <br><br>To-do: Decide on mobile-friendly layout.
+        <br><br> Later: Styling rewarding results? (fly in tweets, etc.)
+        <br><br>MAYBE: Change date input to a slider.
       </div>
 
       <div class="container tweets">
-        <!--A tweet -->
         <div class="container">
-          Big container div starts here.
 
           <div class="legend"> </div>
 
           <div class="frame">
-            <div class="numero"><span>1</span>Choose a hashtag </div>
+            <!--div for each filter-->
+            <div class="numero"><span>1 </span>Choose a hashtag </div>
 
             <select class="filter">
               <option> -Select a Hashtag-</option>
@@ -61,7 +63,8 @@
           </div>
 
           <div class="frame">
-            <div class="numero"><span>3</span>Choose a date</div>
+            <!--div for each filter-->
+            <div class="numero"><span>2 </span>Choose a date</div>
 
             <div class="calendar">
               <ul>
@@ -76,8 +79,8 @@
             </div>
           </div>
 
-          <!--<div class="frame">
-          <div class="numero"><span>2</span>Choose a language</div>
+          <!--<div class="frame"
+          <div class="numero"><span>3</span>Choose a language</div>
 
           <select class="filter">
             <option value="Language">Language</option>
@@ -85,36 +88,59 @@
             <option value="Spanish">Spanish</option>
             <option value="Italian">Italian</option>
             <option value="French">French</option>
-          </select>
-        </div>-->
-
-          <div class="container output">
-            <p>The date is:
-              <p id="dateoutput">
-              </p>
-            </p>
-          </div>
-
-
-          <div class="container output">
-            <p>The hashtag you selected was: <span id="hashtagoutput"><span></p>
-            <div class="container output">
-              <p>The hashtag you selected was: <p id="hashtagoutput">
-                  <p></p>
-            </div>
-          </div>
-
-
-          <!-- the jQuery library. You need this to be able to use jQuery ($) -->
-          <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+          </select>-->
 
         </div>
       </div>
-      <!-- the jQuery library. You need this to be able to use jQuery ($) -->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    </div>
 
-      <!-- Your javascript should be called here -->
-      <script src="main.js"></script>
+    <div class="container output">
+      <p>Date:
+        <p id="dateoutput">
+        </p>
+      </p>
+    </div>
+
+    <div class="container output">
+      <p>Hashtag: <span id="hashtagoutput"><span></p>
+    </div>
+
+    <div class="container output" id="threetweetdisplaybox">
+      <div class="output">Tweets go here</div>
+      <div class="output">Here</div>
+      <div class="output">And here</div>
+    </div>
+
+    <div class="container contenttext">
+      <br><br>
+      <p>THIS IS FILLER Text, but we should probably have some down here too, maybe discussing some trends we found out about how social media changed during covid.</p>
+      <br><br>Task 2) Create a database (CSV) of tweets from Twitter's API that sorts tweets by these columns. ##Luca working on this
+      <br><br>Header Row: Hashtag, date, Geo_code(we just want country?), Tweet_Content, username
+      <br><br> Hashtag: Our basic idea is to use 5 hashtags only. But with Twitter API we can hopefully scrape more hashtags, from any time period. This means we will have two plans:
+      <br><br> Plan 1: 5 hashtags, already scraped.
+      <br><br> Plan 2: 10, 15 hashtags, from a broader time period. This plan depends on Luca learning how to scrape Twitter! He has a developer key though already, just needs to learn :)
+    </div>
+
+    <div class="container contenttext">
+      <br><br>Task 3) Display tweets corresponding to user inputs. ##Leo and Luca
+      <br><br>First, select the correct tweets from the database
+      <br><br>Next, give the tweetss to the browser in some kind of format (could be images, more likely it could be our own 'fake' tweet css).
+      <br><br>Then, display the Tweet:
+      <br><br> - Either on the map (if we have geocode!)
+      <br><br> - Below the map (while we don't have geocode)
+    </div>
+
+
+
+    <!-- the jQuery library. You need this to be able to use jQuery ($) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    </div>
+    <!-- the jQuery library. You need this to be able to use jQuery ($) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Your javascript should be called here -->
+    <script src="main.js"></script>
   </body>
 
 </html>
