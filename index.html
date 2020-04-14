@@ -29,14 +29,23 @@
 
     <h4>By: Luca Powell and Leonardo March</h4>
 
-    <div class="container tweets">
+    <div class="container">
+
+      <img src="img/world.svg">
+
+      <div class="text">
+        Instructions. fasdf I'm baby pop-up farm-to-table truffaut, photo booth pitchfork PBR&B hashtag hexagon occupy hella prism cliche. Jianbing raclette brooklyn twee sartorial ramps truffaut. Kombucha farm-to-table wolf,
+        distillery kickstarter
+        chicharrones DIY <p> letterpress tote bag. Williamsburg air plant vinyl fanny pack, kombucha selvage cornhole. Craft beer tattooed artisan, hot chicken echo park bespoke forage trust fund microdosing actually poutine heirloom chambray tumeric
+          photo booth pitchfoanbing raclette brooklyn twee sartorial ramps truffaut. Kombucha farm-to-table wolf. </div>
+      
+      <div class="container tweets">
       <!--A tweet -->
       <blockquote class="inactive twitter-tweet">
         <p lang="" es"" dir="" ltr"">Toser en público es más desagradable que tirarse un pedo. <a href="" https://twitter.com/hashtag/coronavirus?src=hash&amp;ref_src=twsrc%5Etfw"">#coronavirus</a> <a href=""
             https://twitter.com/hashtag/cuarantena?src=hash&amp;ref_src=twsrc%5Etfw"">#cuarantena</a></p>&mdash; omega (@omega34319606) <a href="" https://twitter.com/omega34319606/status/1245604080199720961?ref_src=twsrc%5Etfw"">April 2, 2020</a>
       </blockquote>
       <script async src="" https://platform.twitter.com/widgets.js"" charset="" utf-8""></script>
-      =======
       <div class="container">
         Big container div starts here.
 
@@ -56,6 +65,18 @@
 
         <div class="legend"> </div>
 
+      <div class="frame">
+        <div class="numero"><strong>1</strong>Choose a hashtag </div>
+
+        <select class="filter hashtags">
+          <option id="#cuarentena" value="#cuarentena">#cuarentena</option>
+          <option id="##socialdistancing" value="#socialdistancing">#socialdistancing</option>
+          <option id="#socialdistancing" value="#socialdistancing">#socialdistancing</option>
+          <option id="#stayathomechallenge" value="#stayathomechallenge">#stayathomechallenge</option>
+          <option id="#coronavirus" value="#coronavirus">#coronavirus</option>
+        </select>
+      </div>
+       
         <div class="frame">
           <div class="numero"><span>1</span>Choose a hashtag </div>
 
@@ -68,7 +89,7 @@
             <option> #coronavirus </option>
           </select>
         </div>
-
+        
         <!--<div class="frame">
           <div class="numero"><span>2</span>Choose a language</div>
 
@@ -97,6 +118,32 @@
           </div>
         </div>
 
+      <div class="frame">
+        <div class="numero"><strong>2</strong>Choose a language</div>
+
+        <select class="filter">
+          <option value="Language">Language</option>
+          <option value="English">English</option>
+          <option value="Spanish">Spanish</option>
+          <option value="Italian">Italian</option>
+          <option value="French">French</option>
+        </select>
+      </div>
+
+      <div class="frame">
+        <div class="numero"><strong>3</strong>Choose a date</div>
+
+        <div class="calendar">
+          <ul>
+            <li class="datebutton" id="feb15">Feb 15</li>
+            <li class="datebutton" id="feb16">Feb 16</li>
+            <li class="datebutton" id="feb17">Feb 17</li>
+            <li class="datebutton" id="feb18">Feb 18</li>
+            <li class="datebutton" id="feb19">Feb 19</li>
+            <li class="datebutton" id="feb20">Feb 20</li>
+            <li class="datebutton" id="feb21">Feb 21</li>
+            <li class="datebutton" id="feb22">Feb 22</li>
+
 
         <div class="container output">
           <p>The date is:
@@ -105,10 +152,16 @@
           </p>
         </div>
 
+      <div class="twcontainer">
+        <div class="container output">
+          <p>The date is: <span id="dateoutput"><span></p>
+        </div>
+        <div class="container output">
+          <p>The hashtag you selected was: <span id="hashtagoutput"><span></p>
         <div class="container output">
           <p>The hashtag you selected was: <p id="hashtagoutput">
               <p></p>
-        </div>
+      </div>
 
         <div class="container tweets">
           <blockquote class="inactive twitter-tweet">
@@ -117,6 +170,13 @@
               2020</a>
           </blockquote>
           <script async src="" https://platform.twitter.com/widgets.js"" charset="" utf-8""></script>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- the jQuery library. You need this to be able to use jQuery ($) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
         </div>
       </div>
