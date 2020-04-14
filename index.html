@@ -34,7 +34,7 @@
       <img src="img/world.svg">
 
       <div class="text">
-        <strong>Instructions</strong>. fasdf I'm baby pop-up farm-to-table truffaut, photo booth pitchfork PBR&B hashtag hexagon occupy hella prism cliche. Jianbing raclette brooklyn twee sartorial ramps truffaut. Kombucha farm-to-table wolf,
+        Instructions. fasdf I'm baby pop-up farm-to-table truffaut, photo booth pitchfork PBR&B hashtag hexagon occupy hella prism cliche. Jianbing raclette brooklyn twee sartorial ramps truffaut. Kombucha farm-to-table wolf,
         distillery kickstarter
         chicharrones DIY <p> letterpress tote bag. Williamsburg air plant vinyl fanny pack, kombucha selvage cornhole. Craft beer tattooed artisan, hot chicken echo park bespoke forage trust fund microdosing actually poutine heirloom chambray tumeric
           photo booth pitchfoanbing raclette brooklyn twee sartorial ramps truffaut. Kombucha farm-to-table wolf,
@@ -47,9 +47,9 @@
       <div class="legend"> </div>
 
       <div class="frame">
-        <div class="numero"><span>1</span>Choose a hashtag </div>
+        <div class="numero"><strong>1</strong>Choose a hashtag </div>
 
-        <select class="filter">
+        <select class="filter hashtags">
           <option id="#cuarentena" value="#cuarentena">#cuarentena</option>
           <option id="##socialdistancing" value="#socialdistancing">#socialdistancing</option>
           <option id="#socialdistancing" value="#socialdistancing">#socialdistancing</option>
@@ -60,7 +60,7 @@
 
 
       <div class="frame">
-        <div class="numero"><span>2</span>Choose a language</div>
+        <div class="numero"><strong>2</strong>Choose a language</div>
 
         <select class="filter">
           <option value="Language">Language</option>
@@ -72,7 +72,7 @@
       </div>
 
       <div class="frame">
-        <div class="numero"><span>3</span>Choose a date</div>
+        <div class="numero"><strong>3</strong>Choose a date</div>
 
         <div class="calendar">
           <ul>
@@ -87,24 +87,26 @@
         </div>
       </div>
 
+      <div class="twcontainer">
+        <div class="container output">
+          <p>The date is: <span id="dateoutput"><span></p>
+        </div>
+        <div class="container output">
+          <p>The hashtag you selected was: <span id="hashtagoutput"><span></p>
+        </div>
 
-      <div class="container output">
-        <p>The date is: <span id="dateoutput"><span></p>
-      </div>
-      <div class="container output">
-        <p>The hashtag you selected was: <span id="hashtagoutput"><span></p>
-      </div>
-
-      <div class="container tweets">
-        <blockquote class="inactive twitter-tweet">
-          <p lang="" es"" dir="" ltr"">Toser en público es más desagradable que tirarse un pedo. <a href="" https://twitter.com/hashtag/coronavirus?src=hash&amp;ref_src=twsrc%5Etfw"">#coronavirus</a> <a href=""
-              https://twitter.com/hashtag/cuarantena?src=hash&amp;ref_src=twsrc%5Etfw"">#cuarantena</a></p>&mdash; omega (@omega34319606) <a href="" https://twitter.com/omega34319606/status/1245604080199720961?ref_src=twsrc%5Etfw"">April 2,
-            2020</a>
-        </blockquote>
-        <script async src="" https://platform.twitter.com/widgets.js"" charset="" utf-8""></script>
-
+        <div class="container tweets">
+          <blockquote class="inactive twitter-tweet">
+            <p lang="" es"" dir="" ltr"">Toser en público es más desagradable que tirarse un pedo. <a href="" https://twitter.com/hashtag/coronavirus?src=hash&amp;ref_src=twsrc%5Etfw"">#coronavirus</a> <a href=""
+                https://twitter.com/hashtag/cuarantena?src=hash&amp;ref_src=twsrc%5Etfw"">#cuarantena</a></p>&mdash; omega (@omega34319606) <a href="" https://twitter.com/omega34319606/status/1245604080199720961?ref_src=twsrc%5Etfw"">April 2,
+              2020</a>
+          </blockquote>
+          <script async src="" https://platform.twitter.com/widgets.js"" charset="" utf-8""></script>
+        </div>
       </div>
     </div>
+
+
     <!-- the jQuery library. You need this to be able to use jQuery ($) -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 

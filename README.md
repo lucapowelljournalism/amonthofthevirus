@@ -8,6 +8,7 @@ Objective: Create a twitter-based interactive that allows users to see the chang
 
 Pseudo-code
 1) Design a layout that is intuitive. Layout should encourage users to test multiple hashtags. Users should feel like their curiosity is rewarded. Moving throughout the interactive should be easy, not confusing, ideally.
+1.1) Simply CSS and Media Queries (Leo workin on this)
   \##LEO== CSS MASTER##
 
 2) Create a database (CSV) of tweets from  Twitter's API that sorts tweets by these columns. ##Luca working on this
