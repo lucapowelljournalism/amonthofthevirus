@@ -31,7 +31,7 @@ html, body {
 
     .container img {
         width: 100%;
-        \\border: 5px dotted #bdceda;
+        border: 5px dotted #bdceda;
         border-radius: 20px;
         \\*display: block;
         padding-top: 60px;
@@ -68,6 +68,7 @@ html, body {
         display: inline;
         vertical-align: middle;
         height: 45px;
+        padding: 30px;
     }
 
     span {
@@ -287,6 +288,10 @@ li {
     font-size: 1em;
     font-weight: bold;
     text-transform: uppercase;
+}
+
+.output p {
+    display: inline;
 }
 
 blockquote.twitter-tweet {

@@ -1,14 +1,18 @@
 # amonthofthevirus
 
-Objective: Create a twitter-based interactive that allows users to see the changing responses to Covid over-time AND in different regions.
+Objective: Create a Twitter-based interactive that allows users to see the changing responses to Covid over-time AND in different regions.
 
--   User inputs hashtags, dates, places
+-   User inputs hashtags, dates, places, language
 -   Outputs the tweets
-    -   Goal of the output is to give the user a sense of what was going on then and there.
+    -   Goal of the output is to guide a user through the world and thoughts on social media as covid was developing.
 
 Pseudo-code
+
 1) Design a layout that is intuitive. Layout should encourage users to test multiple hashtags. Users should feel like their curiosity is rewarded. Moving throughout the interactive should be easy, not confusing, ideally.
   \##LEO== CSS MASTER##
+  To-do: Decide on mobile-friendly layout.
+  Later: Styling rewarding results? (fly in tweets, etc.)
+  MAYBE: Change date input to a slider
 
 2) Create a database (CSV) of tweets from  Twitter's API that sorts tweets by these columns. ##Luca working on this
   Header Row: Hashtag, date, Geo_code(we just want country?), Tweet_Content, username
@@ -20,9 +24,9 @@ Pseudo-code
     \- Tweet_content == Tweet_Content
     \- username == username
 
-3) Display tweets corresponding to user inputs.
+3) Display tweets corresponding to user inputs. ##Leo and Luca
   a) Select the correct tweets from the database
   b) give them to the browser in some kind of format (could be images, more likely it could be our own 'fake' tweet css)
   3) display the Tweet
-    \- either on the map
-    \- Below the app
+    \- either on the map (if we have geocode!)
+    \- Below the map (while we don't have geocode)
