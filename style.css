@@ -27,20 +27,7 @@ ul {
     width: 40%;
     display: block;
     height: 30px;
-    background-color: #bdceda;
-    border: 0;
-    font-size: .75em;
-    font: white;
-    float: right;
-    padding-left: 5px
-}
-
-.hashtags {
-    text-align: left;
-    width: 40%;
-    display: block;
-    height: 30px;
-    background-color: #bdceda;
+    background-color: #BDCEDA;
     border: 0;
     font-size: .75em;
     font: white;
@@ -49,7 +36,7 @@ ul {
 }
 
 .frame {
-    border-top: 1px dotted #bdceda;
+    border-top: 1px dotted #BDCEDA;
     display: inline-block;
     padding-top: 15px;
     padding-bottom: 10px;
@@ -69,7 +56,7 @@ strong {
     border-radius: 20px;
     width: 25px;
     height: 25px;
-    background: #bdceda;
+    background: #BDCEDA;
     font-family: Verdana;
     font-weight: bold;
     color: white;
@@ -143,7 +130,7 @@ strong {
         margin-top: 2%
     }
 
-    .numero {
+   .numero {
         width: 80%;
         display: inline;
         vertical-align: middle;
@@ -154,7 +141,7 @@ strong {
 
     .container {
         width: 85%;
-        margin: 0 auto;
+        margin: 10 auto;
         padding: 1em;
         height: auto;
     }
@@ -179,18 +166,16 @@ strong {
 
     /* these 2 could be deleted soon
     .twcontainer {
-        border-top: 1px solid #bdceda;
+        border-top: 1px solid #BDCEDA;
         width: 85%;
         margin: 0 auto;
         display: flex;
         flex-wrap: wrap;
         padding-top: 40px;
     }
-
     #tweets {
         flex-basis: 1%;
         padding: 5px;
-
         */
 }
 
@@ -207,7 +192,7 @@ strong {
 
     h2 {
         display: block;
-        border-top: 1px dotted #bdceda;
+        border-top: 1px dotted #BDCEDA;
         width: 100%;
         padding-top: 10px;
     }
@@ -240,19 +225,32 @@ strong {
     /* .legend {
         width: 220px;
         height: 90px;
-        background-color: #bdceda;
+        background-color: #BDCEDA;
         position: relative;
         top: 300px;
         left: 700px;
     }
 */
     /* -----------Forms section -----------  */
-    .filter {
+  .filter {
         text-align: left;
         width: 40%;
         display: block;
         height: 30px;
-        background-color: #bdceda;
+        background-color: #BDCEDA;
+        border: 0;
+        font-size: .75em;
+        font: white;
+        float: right;
+        padding-left: 5px
+    }
+  
+ .hashtags {
+        text-align: left;
+        width: 40%;
+        display: block;
+        height: 30px;
+        background-color: #BDCEDA;
         border: 0;
         font-size: .75em;
         font: white;
@@ -260,21 +258,8 @@ strong {
         padding-left: 5px
     }
 
-    .hashtags {
-        text-align: left;
-        width: 40%;
-        display: block;
-        height: 30px;
-        background-color: #bdceda;
-        border: 0;
-        font-size: .75em;
-        font: white;
-        float: right;
-        padding-left: 5px
-    }
-
-    .frame {
-        border-top: 1px dotted #bdceda;
+.frame {
+        border-top: 1px dotted #BDCEDA;
         width: 30%;
         display: inline-block;
         padding-top: 15px;
@@ -283,12 +268,27 @@ strong {
         margin-left: 10px;
     }
 
-    .numero {
+.numero {
         width: 80%;
         display: inline;
         vertical-align: middle;
         height: 45px;
         font-size: .8em;
+        font-size: .8vw;
+    }
+
+strong {
+        border-radius: 20px;
+        width: 25px;
+        height: 25px;
+        background: #BDCEDA;
+        font-family: Verdana;
+        font-weight: bold;
+        color: white;
+        font-size: 1.75em;
+        vertical-align: middle;
+        float: left;
+        margin-right: 10px;
     }
 
     .slidecontainer {
@@ -318,7 +318,7 @@ strong {
         display: flex;
         flex-wrap: wrap;
         padding-top: 0px;
-        border-top: 1px dotted #bdceda;
+        border-top: 1px dotted #BDCEDA;
         width: 100%;
         padding-top: 10px;
     }
@@ -337,7 +337,13 @@ strong {
     .containertweets {
         width: 280px;
         height: 150px;
-        background-color: #f8f7f7;
+        background-color: #F8F7F7;
+    }
+
+    .tweet {
+        /*change to flexbox*/
+        display: inline-block;
+        width: 300px;
     }
 }
 
@@ -356,7 +362,7 @@ li {
 }
 
 .datebutton {
-    background-color: #bdceda;
+    background-color: #BDCEDA;
     border: none;
     font-size: .75em;
     width: 20px;
@@ -365,7 +371,7 @@ li {
 
 .output {
     text-align: left;
-    font-size: .75em;
+    font-size: 20px;
     text-transform: uppercase;
     height: 20px;
     margin-left: 10px;
@@ -377,39 +383,15 @@ li {
 }
 
 blockquote.twitter-tweet {
-    display: inline-block;
-    font-family: "Helvetica Neue", Roboto, "Segoe UI", Calibri, sans-serif;
-    font-size: 12px;
-    font-weight: bold;
-    line-height: 16px;
-    border-color: #eee #ddd #bbb;
-    border-radius: 5px;
-    border-style: solid;
-    border-width: 1px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
-    margin: 10px 5px;
-    padding: 0 16px 16px 16px;
-    max-width: 468px;
+
 }
 
-blockquote.twitter-tweet p {
-    font-size: 16px;
-    font-weight: normal;
-    line-height: 20px;
+#threetweetdisplaybox {
+    position: absolute;
+    right: 300px;
 }
 
-blockquote.twitter-tweet a {
-    color: inherit;
-    font-weight: normal;
-    text-decoration: none;
-    outline: 0 none;
-}
-
-blockquote.twitter-tweet a:hover,
-blockquote.twitter-tweet a:focus {
-    text-decoration: underline;
-}
-
-.inactive {
-    opacity: 0;
+.output p {
+    display: inline;
+    /*keeps everything horizontal in the output text for Date: and Hashtag:
 }
