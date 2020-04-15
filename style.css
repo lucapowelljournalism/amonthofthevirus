@@ -17,6 +17,11 @@ h1, h2, h4 {
     line-height: 1em;
 }
 
+ul {
+    padding: 0px;
+    margin: 0px;
+}
+
 .filter {
     text-align: left;
     width: 40%;
@@ -83,18 +88,15 @@ strong {
 
 .text {
     height: 100%;
-    font-size: .8em;
     display: block;
     line-height: 1.5;
     padding-bottom: 10px;
     height: 100%;
     padding-top: 0px;
-    margin-right: 10px;
-    padding-right: 10px;
 }
 
 /*------Webpage layout for Mobile Small Screens-----*/
-@media screen and (min-device-width: 320px) and (max-device-width: 649px) {
+@media screen and (min-device-width: 320px) and (max-device-width: 774px) {
     .container {
         width: 85%;
         margin: 0 auto;
@@ -104,27 +106,50 @@ strong {
 
     .container img {
         display: none;
+        width: 100%;
+        padding-top: 60px;
     }
 
-    h1 {
+    h1, h2, h4 {
         text-align: left;
     }
-}
 
-.text {
-    width: 100%;
-}
+    h2 {
+        top: 5%
+    }
 
-.frame {
-    width: 85%;
+    .text {
+        width: 100%;
+    }
+
+    .frame {
+        width: 85%;
+    }
 }
 
 /*------Webpage layout for Medium Size-----*/
-@media screen and (min-device-width: 650px) and (max-device-width: 1000px) {
+@media screen and (min-width: 775px) and (max-width: 1100px) {
     h1, h2, h4 {
         text-align: left;
         line-height: 1em;
         margin-right: 10%;
+    }
+
+    h1 {
+        margin-top: 8%;
+    }
+
+    h4 {
+        margin-top: 2%
+    }
+
+    .numero {
+        width: 80%;
+        display: inline;
+        vertical-align: middle;
+        height: 45px;
+        padding: 0px;
+        font-size: 1em;
     }
 
     .container {
@@ -136,21 +161,20 @@ strong {
 
     .container img {
         width: 100%;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+        border-bottom: 1px dotted #bdceda;
     }
 
-    //* Forms section   *//
     .frame {
-        width: 85%;
-        margin-left: 19%
+        width: 95%;
     }
 
     .text {
-        width: 85%;
-        font-size: .75em;
-        margin: 0 auto;
-        display: block;
-        line-height: 1.5;
-        padding-bottom: 10px;
+        width: 95%;
+        font-size: .85em;
+        padding-bottom: 20px;
+        column-count: 2;
     }
 
     /* these 2 could be deleted soon
@@ -171,11 +195,11 @@ strong {
 }
 
 /*------ Webpage Layout ------Big Screens*/
-@media only screen and (min-device-width: 1001px) {
+@media only screen and (min-device-width: 1101px) {
     h1 {
         text-align: left;
         line-height: 1em;
-        font-size: 4em;
+        font-size: 3em;
         margin-left: 2%;
         margin-bottom: 1%;
         margin-top: 2%
@@ -206,7 +230,11 @@ strong {
         float: right;
         padding-left: 10px;
         border-left: 1px solid #bdceda;
-        margin-bottom: 40px;
+        margin-bottom: 0px;
+    }
+
+    .calendar {
+        width: 85%
     }
 
     /* .legend {
@@ -260,21 +288,7 @@ strong {
         display: inline;
         vertical-align: middle;
         height: 45px;
-        font-size: .8vw;
-    }
-
-    strong {
-        border-radius: 20px;
-        width: 25px;
-        height: 25px;
-        background: #bdceda;
-        font-family: Verdana;
-        font-weight: bold;
-        color: white;
-        font-size: 1.75em;
-        vertical-align: middle;
-        float: left;
-        margin-right: 10px;
+        font-size: .8em;
     }
 
     .slidecontainer {
@@ -297,7 +311,7 @@ strong {
         padding-right: 10px;
     }
 
-    /*------------- Tweets section -----------  */
+    /*------------- Tweets section -----------  To Be Deleted? */
     .twcontainer {
         width: 100%;
         margin: 0 auto;
@@ -330,8 +344,8 @@ strong {
 /* ------- Luca Code ------*/
 .calendar {
     margin-top: 0px;
-    width: 70%;
     float: right;
+    height: 100%;
 }
 
 li {
@@ -356,6 +370,10 @@ li {
     height: 20px;
     margin-left: 10px;
     margin-top: 5px;
+}
+
+.output p {
+    display: inline;
 }
 
 blockquote.twitter-tweet {

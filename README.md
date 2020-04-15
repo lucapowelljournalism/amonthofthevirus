@@ -4,11 +4,11 @@ Objective: Create a twitter-based interactive that allows users to see the chang
 
 -   User inputs hashtags, dates, places
 -   Outputs the tweets
-    -   Goal of the output is to give the user a sense of what was going on then and there.
+    -   Goal of the output is to give the user a bird view of social media users' 'minds' via Twitter, related to COVID-19
 
 Pseudo-code
 1) Design a layout that is intuitive. Layout should encourage users to test multiple hashtags. Users should feel like their curiosity is rewarded. Moving throughout the interactive should be easy, not confusing, ideally.
-1.1) Simply CSS and Media Queries (Leo workin on this)
+1.1) Simplify CSS and Media Queries (Leo workin on this)
   \##LEO== CSS MASTER##
 
 2) Create a database (CSV) of tweets from  Twitter's API that sorts tweets by these columns. ##Luca working on this
