@@ -17,25 +17,17 @@ h1, h2, h4 {
     line-height: 1em;
 }
 
+ul {
+    padding: 0px;
+    margin: 0px;
+}
+
 .filter {
     text-align: left;
     width: 40%;
     display: block;
     height: 30px;
-    background-color: #bdceda;
-    border: 0;
-    font-size: .75em;
-    font: white;
-    float: right;
-    padding-left: 5px
-}
-
-.hashtags {
-    text-align: left;
-    width: 40%;
-    display: block;
-    height: 30px;
-    background-color: #bdceda;
+    background-color: #BDCEDA;
     border: 0;
     font-size: .75em;
     font: white;
@@ -44,7 +36,7 @@ h1, h2, h4 {
 }
 
 .frame {
-    border-top: 1px dotted #bdceda;
+    border-top: 1px dotted #BDCEDA;
     display: inline-block;
     padding-top: 15px;
     padding-bottom: 10px;
@@ -64,7 +56,7 @@ strong {
     border-radius: 20px;
     width: 25px;
     height: 25px;
-    background: #bdceda;
+    background: #BDCEDA;
     font-family: Verdana;
     font-weight: bold;
     color: white;
@@ -83,18 +75,15 @@ strong {
 
 .text {
     height: 100%;
-    font-size: .8em;
     display: block;
     line-height: 1.5;
     padding-bottom: 10px;
     height: 100%;
     padding-top: 0px;
-    margin-right: 10px;
-    padding-right: 10px;
 }
 
 /*------Webpage layout for Mobile Small Screens-----*/
-@media screen and (min-device-width: 320px) and (max-device-width: 649px) {
+@media screen and (min-device-width: 320px) and (max-device-width: 774px) {
     .container {
         width: 85%;
         margin: 0 auto;
@@ -104,78 +93,98 @@ strong {
 
     .container img {
         display: none;
+        width: 100%;
+        padding-top: 60px;
     }
 
-    h1 {
+    h1, h2, h4 {
         text-align: left;
     }
-}
 
-.text {
-    width: 100%;
-}
+    h2 {
+        top: 5%
+    }
 
-.frame {
-    width: 85%;
+    .text {
+        width: 100%;
+    }
+
+    .frame {
+        width: 85%;
+    }
 }
 
 /*------Webpage layout for Medium Size-----*/
-@media screen and (min-device-width: 650px) and (max-device-width: 1000px) {
+@media screen and (min-width: 775px) and (max-width: 1100px) {
     h1, h2, h4 {
         text-align: left;
         line-height: 1em;
         margin-right: 10%;
     }
 
+    h1 {
+        margin-top: 8%;
+    }
+
+    h4 {
+        margin-top: 2%
+    }
+
+   .numero {
+        width: 80%;
+        display: inline;
+        vertical-align: middle;
+        height: 45px;
+        padding: 0px;
+        font-size: 1em;
+    }
+
     .container {
         width: 85%;
-        margin: 0 auto;
+        margin: 10 auto;
         padding: 1em;
         height: auto;
     }
 
     .container img {
         width: 100%;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+        border-bottom: 1px dotted #bdceda;
     }
 
-    //* Forms section   *//
     .frame {
-        width: 85%;
-        margin-left: 19%
+        width: 95%;
     }
 
     .text {
-        width: 85%;
-        font-size: .75em;
-        margin: 0 auto;
-        display: block;
-        line-height: 1.5;
-        padding-bottom: 10px;
+        width: 95%;
+        font-size: .85em;
+        padding-bottom: 20px;
+        column-count: 2;
     }
 
     /* these 2 could be deleted soon
     .twcontainer {
-        border-top: 1px solid #bdceda;
+        border-top: 1px solid #BDCEDA;
         width: 85%;
         margin: 0 auto;
         display: flex;
         flex-wrap: wrap;
         padding-top: 40px;
     }
-
     #tweets {
         flex-basis: 1%;
         padding: 5px;
-
         */
 }
 
 /*------ Webpage Layout ------Big Screens*/
-@media only screen and (min-device-width: 1001px) {
+@media only screen and (min-device-width: 1101px) {
     h1 {
         text-align: left;
         line-height: 1em;
-        font-size: 4em;
+        font-size: 3em;
         margin-left: 2%;
         margin-bottom: 1%;
         margin-top: 2%
@@ -183,7 +192,7 @@ strong {
 
     h2 {
         display: block;
-        border-top: 1px dotted #bdceda;
+        border-top: 1px dotted #BDCEDA;
         width: 100%;
         padding-top: 10px;
     }
@@ -206,25 +215,42 @@ strong {
         float: right;
         padding-left: 10px;
         border-left: 1px solid #bdceda;
-        margin-bottom: 40px;
+        margin-bottom: 0px;
+    }
+
+    .calendar {
+        width: 85%
     }
 
     /* .legend {
         width: 220px;
         height: 90px;
-        background-color: #bdceda;
+        background-color: #BDCEDA;
         position: relative;
         top: 300px;
         left: 700px;
     }
 */
     /* -----------Forms section -----------  */
-    .filter {
+  .filter {
         text-align: left;
         width: 40%;
         display: block;
         height: 30px;
-        background-color: #bdceda;
+        background-color: #BDCEDA;
+        border: 0;
+        font-size: .75em;
+        font: white;
+        float: right;
+        padding-left: 5px
+    }
+  
+ .hashtags {
+        text-align: left;
+        width: 40%;
+        display: block;
+        height: 30px;
+        background-color: #BDCEDA;
         border: 0;
         font-size: .75em;
         font: white;
@@ -232,21 +258,8 @@ strong {
         padding-left: 5px
     }
 
-    .hashtags {
-        text-align: left;
-        width: 40%;
-        display: block;
-        height: 30px;
-        background-color: #bdceda;
-        border: 0;
-        font-size: .75em;
-        font: white;
-        float: right;
-        padding-left: 5px
-    }
-
-    .frame {
-        border-top: 1px dotted #bdceda;
+.frame {
+        border-top: 1px dotted #BDCEDA;
         width: 30%;
         display: inline-block;
         padding-top: 15px;
@@ -255,19 +268,20 @@ strong {
         margin-left: 10px;
     }
 
-    .numero {
+.numero {
         width: 80%;
         display: inline;
         vertical-align: middle;
         height: 45px;
+        font-size: .8em;
         font-size: .8vw;
     }
 
-    strong {
+strong {
         border-radius: 20px;
         width: 25px;
         height: 25px;
-        background: #bdceda;
+        background: #BDCEDA;
         font-family: Verdana;
         font-weight: bold;
         color: white;
@@ -297,14 +311,14 @@ strong {
         padding-right: 10px;
     }
 
-    /*------------- Tweets section -----------  */
+    /*------------- Tweets section -----------  To Be Deleted? */
     .twcontainer {
         width: 100%;
         margin: 0 auto;
         display: flex;
         flex-wrap: wrap;
         padding-top: 0px;
-        border-top: 1px dotted #bdceda;
+        border-top: 1px dotted #BDCEDA;
         width: 100%;
         padding-top: 10px;
     }
@@ -323,15 +337,21 @@ strong {
     .containertweets {
         width: 280px;
         height: 150px;
-        background-color: #f8f7f7;
+        background-color: #F8F7F7;
+    }
+
+    .tweet {
+        /*change to flexbox*/
+        display: inline-block;
+        width: 300px;
     }
 }
 
 /* ------- Luca Code ------*/
 .calendar {
     margin-top: 0px;
-    width: 70%;
     float: right;
+    height: 100%;
 }
 
 li {
@@ -342,7 +362,7 @@ li {
 }
 
 .datebutton {
-    background-color: #bdceda;
+    background-color: #BDCEDA;
     border: none;
     font-size: .75em;
     width: 20px;
@@ -351,47 +371,27 @@ li {
 
 .output {
     text-align: left;
-    font-size: .75em;
+    font-size: 20px;
     text-transform: uppercase;
     height: 20px;
     margin-left: 10px;
     margin-top: 5px;
 }
 
+.output p {
+    display: inline;
+}
+
 blockquote.twitter-tweet {
-    display: inline-block;
-    font-family: "Helvetica Neue", Roboto, "Segoe UI", Calibri, sans-serif;
-    font-size: 12px;
-    font-weight: bold;
-    line-height: 16px;
-    border-color: #eee #ddd #bbb;
-    border-radius: 5px;
-    border-style: solid;
-    border-width: 1px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
-    margin: 10px 5px;
-    padding: 0 16px 16px 16px;
-    max-width: 468px;
+
 }
 
-blockquote.twitter-tweet p {
-    font-size: 16px;
-    font-weight: normal;
-    line-height: 20px;
+#threetweetdisplaybox {
+    position: absolute;
+    right: 300px;
 }
 
-blockquote.twitter-tweet a {
-    color: inherit;
-    font-weight: normal;
-    text-decoration: none;
-    outline: 0 none;
-}
-
-blockquote.twitter-tweet a:hover,
-blockquote.twitter-tweet a:focus {
-    text-decoration: underline;
-}
-
-.inactive {
-    opacity: 0;
+.output p {
+    display: inline;
+    /*keeps everything horizontal in the output text for Date: and Hashtag:
 }
